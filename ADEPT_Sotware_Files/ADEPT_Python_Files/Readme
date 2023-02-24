@@ -2,3 +2,4 @@ ADEPT Python files:
 
 1. ADEPT_TRACE_GUI.py - Code with the canvas to trace the path of the trapped particle
 2. ADEPT_TEXT_GUI.py  - Code without the canvas but just text boxes to input the amplitude, phase and frequency of the voltage signals.
+3. ADEPT_LUT.pickle   - The look up table file called by the ADEPT_TRACE.py code which contains the location and voltage phase combination of the six electrodes.

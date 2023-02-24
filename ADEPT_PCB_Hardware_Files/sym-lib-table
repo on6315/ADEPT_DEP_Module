@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib (name arduino)(type Legacy)(uri ${KIPRJMOD}/arduino.lib)(options "")(descr ""))
+  (lib (name oscilator)(type Legacy)(uri ${KIPRJMOD}/oscilator.lib)(options "")(descr ""))
+  (lib (name AD9913BCPZ)(type Legacy)(uri ${KIPRJMOD}/AD9913BCPZ.lib)(options "")(descr ""))
+  (lib (name AD825ARZ)(type Legacy)(uri ${KIPRJMOD}/AD825ARZ.lib)(options "")(descr ""))
+  (lib (name AD8400ARZ10)(type Legacy)(uri ${KIPRJMOD}/AD8400ARZ10.lib)(options "")(descr ""))
+  (lib (name MAX14752EUE+)(type Legacy)(uri ${KIPRJMOD}/MAX14752EUE+.lib)(options "")(descr ""))
+  (lib (name MAX14753EUE+)(type Legacy)(uri ${KIPRJMOD}/MAX14753EUE+.lib)(options "")(descr ""))
+  (lib (name w_connectors)(type Legacy)(uri ${KIPRJMOD}/w_connectors.lib)(options "")(descr ""))
+  (lib (name OPA277UA)(type Legacy)(uri ${KIPRJMOD}/OPA277UA.lib)(options "")(descr ""))
+  (lib (name LT1764AEQ-1.8#PBF)(type Legacy)(uri ${KIPRJMOD}/LT1764AEQ-1.8#PBF.lib)(options "")(descr ""))
+  (lib (name NCS12S1205C)(type Legacy)(uri ${KIPRJMOD}/NCS12S1205C.lib)(options "")(descr ""))
+)

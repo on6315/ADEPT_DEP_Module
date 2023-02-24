@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name circuit_DEP)(type KiCad)(uri "C:/Users/hsche/Desktop/IMT ordner/circuit_DEP")(options "")(descr ""))
+  (lib (name AD9833_adapter)(type KiCad)(uri "C:/Users/hsche/Desktop/IMT ordner/AD9833_adapter")(options "")(descr ""))
+  (lib (name "circuit_DEP - V2")(type KiCad)(uri "C:/Users/hsche/Desktop/IMT ordner/circuit_DEP - V2")(options "")(descr ""))
+  (lib (name "circuit_DEP V2")(type KiCad)(uri "C:/Users/hsche/project-dep-control/Kicad files/circuit_DEP V2")(options "")(descr ""))
+  (lib (name function)(type KiCad)(uri ${KIPRJMOD}/function.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,62 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# NCS12S1205C
+#
+DEF NCS12S1205C PS 0 30 Y Y 1 F N
+F0 "PS" 750 200 50 H V L CNN
+F1 "NCS12S1205C" 750 100 50 H V L CNN
+F2 "NCS12D1212C" 750 0 50 H I L CNN
+F3 "https://www.arrow.com/en/products/ncs12s1205c/murata-power-solutions" 750 -100 50 H I L CNN
+F4 "Murata Power Solutions NCS12 12W Isolated DC-DC Converter Through Hole, Vin 9  36 V dc, Vout 5V dc" 750 -200 50 H I L CNN "Description"
+F5 "10" 750 -300 50 H I L CNN "Height"
+F6 "Murata Electronics" 750 -400 50 H I L CNN "Manufacturer_Name"
+F7 "NCS12S1205C" 750 -500 50 H I L CNN "Manufacturer_Part_Number"
+F8 "580-NCS12S1205C" 750 -600 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Murata-Power-Solutions/NCS12S1205C?qs=lub5aoyU9qAB%2FCs5kAJG3Q%3D%3D" 750 -700 50 H I L CNN "Mouser Price/Stock"
+F10 "NCS12S1205C" 750 -800 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/ncs12s1205c/murata-power-solutions" 750 -900 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 -300 0 700 0 700 -600 -300 -600 -300 0 N
+X CONTROL 1 -500 -100 200 R 50 50 0 0 P
+X N/C 11 -500 -500 200 R 50 50 0 0 N
+X +VOUT 14 900 -400 200 L 50 50 0 0 P
+X 0V 16 900 -300 200 L 50 50 0 0 P
+X -VIN_1 2 -500 -200 200 R 50 50 0 0 P
+X +VIN_1 22 900 -200 200 L 50 50 0 0 P
+X +VIN_2 23 900 -100 200 L 50 50 0 0 P
+X -VIN_2 3 -500 -300 200 R 50 50 0 0 P
+X NO_PIN 9 -500 -400 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# NCS12S1205D
+#
+DEF NCS12S1205D PS 0 30 Y Y 1 F N
+F0 "PS" 750 200 50 H V L CNN
+F1 "NCS12S1205D" 750 100 50 H V L CNN
+F2 "NCS12D1212C" 750 0 50 H I L CNN
+F3 "https://www.arrow.com/en/products/ncs12s1205c/murata-power-solutions" 750 -100 50 H I L CNN
+F4 "Murata Power Solutions NCS12 12W Isolated DC-DC Converter Through Hole, Vin 9  36 V dc, Vout 5V dc" 750 -200 50 H I L CNN "Description"
+F5 "10" 750 -300 50 H I L CNN "Height"
+F6 "Murata Electronics" 750 -400 50 H I L CNN "Manufacturer_Name"
+F7 "NCS12S1205C" 750 -500 50 H I L CNN "Manufacturer_Part_Number"
+F8 "580-NCS12S1205C" 750 -600 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Murata-Power-Solutions/NCS12S1205C?qs=lub5aoyU9qAB%2FCs5kAJG3Q%3D%3D" 750 -700 50 H I L CNN "Mouser Price/Stock"
+F10 "NCS12S1205C" 750 -800 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/ncs12s1205c/murata-power-solutions" 750 -900 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 -300 0 700 0 700 -600 -300 -600 -300 0 N
+X CONTROL 1 -500 -100 200 R 50 50 0 0 P
+X -VOUT 11 -500 -500 200 R 50 50 0 0 P
+X +VOUT 14 900 -400 200 L 50 50 0 0 P
+X 0V 16 900 -300 200 L 50 50 0 0 P
+X -VIN_1 2 -500 -200 200 R 50 50 0 0 P
+X +VIN_1 22 900 -200 200 L 50 50 0 0 P
+X +VIN_2 23 900 -100 200 L 50 50 0 0 P
+X -VIN_2 3 -500 -300 200 R 50 50 0 0 P
+X NO_PIN 9 -500 -400 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+#End Library

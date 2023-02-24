@@ -1,4 +1,4 @@
 ADEPT Python files:
 
-1. Code with the canvas to trace the path of the trapped particle
-2. Code without the canvas but just text boxes to input the amplitude, phase and frequency of the voltage signals.
+1. ADEPT_TRACE_GUI.py - Code with the canvas to trace the path of the trapped particle
+2. ADEPT_TEXT_GUI.py  - Code without the canvas but just text boxes to input the amplitude, phase and frequency of the voltage signals.

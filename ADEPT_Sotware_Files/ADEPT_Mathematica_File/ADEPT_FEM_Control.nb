@@ -1,0 +1,516 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     21983,        508]
+NotebookOptionsPosition[     20350,        479]
+NotebookOutlinePosition[     20746,        495]
+CellTagsIndexPosition[     20703,        492]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"vmax", " ", "=", " ", "10"}], ";"}], "\n", 
+ RowBox[{"Manipulate", "[", "\n", " ", 
+  RowBox[{
+   RowBox[{"Block", "[", 
+    RowBox[{
+     RowBox[{"{", "}"}], ",", "\n", "  ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Subscript", "[", 
+        RowBox[{"\[CapitalGamma]", ",", " ", "D"}], "]"}], " ", "=", " ", 
+       RowBox[{"{", "\n", "    ", 
+        RowBox[{
+         RowBox[{"DirichletCondition", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"u", "[", 
+             RowBox[{"x", ",", " ", "y"}], "]"}], " ", "==", " ", 
+            RowBox[{"v1", " ", 
+             RowBox[{"Cos", "[", "\[Alpha]", "]"}]}]}], ",", " ", "\n", 
+           "     ", 
+           RowBox[{"Online", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"x", ",", " ", "y"}], "}"}], ",", " ", 
+             RowBox[{"BCs", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", " ", 
+             RowBox[{"BCs", "[", 
+              RowBox[{"[", "2", "]"}], "]"}]}], "]"}]}], "]"}], ",", "\n", 
+         "    ", 
+         RowBox[{"DirichletCondition", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"u", "[", 
+             RowBox[{"x", ",", " ", "y"}], "]"}], " ", "==", " ", 
+            RowBox[{"v2", " ", 
+             RowBox[{"Cos", "[", "\[Alpha]", "]"}]}]}], ",", " ", "\n", 
+           "     ", 
+           RowBox[{"Online", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"x", ",", " ", "y"}], "}"}], ",", " ", 
+             RowBox[{"BCs", "[", 
+              RowBox[{"[", "3", "]"}], "]"}], ",", " ", 
+             RowBox[{"BCs", "[", 
+              RowBox[{"[", "4", "]"}], "]"}]}], "]"}]}], "]"}], ",", "\n", 
+         "    ", 
+         RowBox[{"DirichletCondition", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"u", "[", 
+             RowBox[{"x", ",", " ", "y"}], "]"}], " ", "==", " ", 
+            RowBox[{"v3", " ", 
+             RowBox[{"Cos", "[", "\[Alpha]", "]"}]}]}], ",", " ", "\n", 
+           "     ", 
+           RowBox[{"Online", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"x", ",", " ", "y"}], "}"}], ",", " ", 
+             RowBox[{"BCs", "[", 
+              RowBox[{"[", "5", "]"}], "]"}], ",", " ", 
+             RowBox[{"BCs", "[", 
+              RowBox[{"[", "6", "]"}], "]"}]}], "]"}]}], "]"}], ",", "\n", 
+         "    ", 
+         RowBox[{"DirichletCondition", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"u", "[", 
+             RowBox[{"x", ",", " ", "y"}], "]"}], " ", "==", " ", 
+            RowBox[{"v4", " ", 
+             RowBox[{"Cos", "[", "\[Alpha]", "]"}]}]}], ",", " ", "\n", 
+           "     ", 
+           RowBox[{"Online", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"x", ",", " ", "y"}], "}"}], ",", " ", 
+             RowBox[{"BCs", "[", 
+              RowBox[{"[", "7", "]"}], "]"}], ",", " ", 
+             RowBox[{"BCs", "[", 
+              RowBox[{"[", "8", "]"}], "]"}]}], "]"}]}], "]"}], ",", "\n", 
+         "    ", 
+         RowBox[{"DirichletCondition", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"u", "[", 
+             RowBox[{"x", ",", " ", "y"}], "]"}], " ", "==", " ", 
+            RowBox[{"v5", " ", 
+             RowBox[{"Cos", "[", "\[Alpha]", "]"}]}]}], ",", " ", "\n", 
+           "     ", 
+           RowBox[{"Online", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"x", ",", " ", "y"}], "}"}], ",", " ", 
+             RowBox[{"BCs", "[", 
+              RowBox[{"[", "9", "]"}], "]"}], ",", " ", 
+             RowBox[{"BCs", "[", 
+              RowBox[{"[", "10", "]"}], "]"}]}], "]"}]}], "]"}], ",", "\n", 
+         "    ", 
+         RowBox[{"DirichletCondition", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"u", "[", 
+             RowBox[{"x", ",", " ", "y"}], "]"}], " ", "==", " ", 
+            RowBox[{"v6", " ", 
+             RowBox[{"Cos", "[", "\[Alpha]", "]"}]}]}], ",", " ", "\n", 
+           "     ", 
+           RowBox[{"Online", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"x", ",", " ", "y"}], "}"}], ",", " ", 
+             RowBox[{"BCs", "[", 
+              RowBox[{"[", "11", "]"}], "]"}], ",", " ", 
+             RowBox[{"BCs", "[", 
+              RowBox[{"[", "12", "]"}], "]"}]}], "]"}]}], "]"}]}], "\n", 
+        "    ", "}"}]}], ";", "\n", "  ", 
+      RowBox[{"potential", " ", "=", " ", "\n", "   ", 
+       RowBox[{"NDSolveValue", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Laplacian", "[", 
+             RowBox[{
+              RowBox[{"u", "[", 
+               RowBox[{"x", ",", " ", "y"}], "]"}], ",", " ", 
+              RowBox[{"{", 
+               RowBox[{"x", ",", " ", "y"}], "}"}]}], "]"}], " ", "==", " ", 
+            "0"}], ",", " ", "\n", "     ", 
+           RowBox[{"Subscript", "[", 
+            RowBox[{"\[CapitalGamma]", ",", " ", "D"}], "]"}]}], "}"}], ",", 
+         " ", "u", ",", " ", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"x", ",", " ", "y"}], "}"}], " ", "\[Element]", " ", 
+          "mesh"}]}], "]"}]}], ";", "\n", "  ", 
+      RowBox[{"ContourPlot", "[", 
+       RowBox[{
+        RowBox[{"potential", "[", 
+         RowBox[{"x", ",", " ", "y"}], "]"}], ",", " ", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"x", ",", " ", "y"}], "}"}], " ", "\[Element]", " ", 
+         "mesh"}], ",", " ", "\n", "   ", 
+        RowBox[{"ColorFunction", " ", "->", " ", "\"\<BlueGreenYellow\>\""}], 
+        ",", " ", 
+        RowBox[{"AspectRatio", " ", "->", " ", "Automatic"}], ",", " ", "\n", 
+        "   ", 
+        RowBox[{"PlotRange", " ", "->", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "vmax"}], ",", " ", "vmax"}], "}"}]}], ",", " ", 
+        RowBox[{"Contours", " ", "->", " ", "20"}], ",", " ", 
+        RowBox[{"MaxRecursion", " ", "->", " ", "5"}], ",", " ", "\n", "   ", 
+        
+        RowBox[{"Epilog", " ", "->", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"PointSize", "[", "Medium", "]"}], ",", " ", "Red", ",", 
+           " ", "\n", "     ", 
+           RowBox[{"Point", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Sin", "[", 
+               RowBox[{"\[Alpha]", " ", "+", " ", 
+                RowBox[{"\[Pi]", "/", "2"}], " ", "-", " ", ".1"}], "]"}], 
+              ",", " ", "\n", "       ", 
+              RowBox[{"Cos", "[", 
+               RowBox[{"\[Alpha]", " ", "+", " ", 
+                RowBox[{"\[Pi]", "/", "2"}], " ", "-", " ", ".1"}], "]"}]}], 
+             "}"}], "]"}], ",", " ", "\n", "      ", "Dashed", ",", " ", "\n",
+            "     ", 
+           RowBox[{"Circle", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", " ", "0"}], "}"}], ",", " ", ".7"}], "]"}]}], 
+          "}"}]}]}], "]"}]}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"v", ",", " ", "1", ",", " ", "\"\<Voltage\>\""}], "}"}], ",", 
+     " ", "0", ",", "\n", "  ", "vmax"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Alpha]", ",", " ", "0", ",", " ", "\"\<Angle\>\""}], "}"}], 
+     ",", " ", "0", ",", " ", 
+     RowBox[{"2", " ", "\[Pi]"}]}], "}"}], " ", ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"v1", ",", " ", "1", ",", " ", "\"\<Voltage1\>\""}], "}"}], ",",
+      " ", "0", ",", "\n", "  ", "vmax"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"v2", ",", " ", "1", ",", " ", "\"\<Voltage2\>\""}], "}"}], ",",
+      " ", "0", ",", "\n", "  ", "vmax"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"v3", ",", " ", "1", ",", " ", "\"\<Voltage3\>\""}], "}"}], ",",
+      " ", "0", ",", "\n", "  ", "vmax"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"v4", ",", " ", "1", ",", " ", "\"\<Voltage4\>\""}], "}"}], ",",
+      " ", "0", ",", "\n", "  ", "vmax"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"v5", ",", " ", "1", ",", " ", "\"\<Voltage5\>\""}], "}"}], ",",
+      " ", "0", ",", "\n", "  ", "vmax"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"v6", ",", " ", "1", ",", " ", "\"\<Voltage6\>\""}], "}"}], ",",
+      " ", "0", ",", "\n", "  ", "vmax"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.885626304877393*^9, 3.885626317974203*^9}, {
+   3.885626425778388*^9, 3.885626435683153*^9}, 3.885626491694366*^9, 
+   3.885626806418317*^9, 3.885626854290702*^9, {3.885626921819071*^9, 
+   3.88562694366457*^9}, 3.885627073024233*^9, {3.8856271271753893`*^9, 
+   3.8856271325037518`*^9}, 3.8856272626948423`*^9, 3.8856273015947323`*^9},
+ EmphasizeSyntaxErrors->True,
+ CellLabel->"In[29]:=",ExpressionUUID->"ca2eca36-1d18-4f82-a3d1-8ecf421a7d09"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`v$$ = 1, $CellContext`v1$$ = 
+    1, $CellContext`v2$$ = 1, $CellContext`v3$$ = 1, $CellContext`v4$$ = 
+    1, $CellContext`v5$$ = 1, $CellContext`v6$$ = 1, $CellContext`\[Alpha]$$ =
+     0, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`v$$], 1, "Voltage"}, 0, 10}, {{
+       Hold[$CellContext`\[Alpha]$$], 0, "Angle"}, 0, 2 Pi}, {{
+       Hold[$CellContext`v1$$], 1, "Voltage1"}, 0, 10}, {{
+       Hold[$CellContext`v2$$], 1, "Voltage2"}, 0, 10}, {{
+       Hold[$CellContext`v3$$], 1, "Voltage3"}, 0, 10}, {{
+       Hold[$CellContext`v4$$], 1, "Voltage4"}, 0, 10}, {{
+       Hold[$CellContext`v5$$], 1, "Voltage5"}, 0, 10}, {{
+       Hold[$CellContext`v6$$], 1, "Voltage6"}, 0, 10}}, Typeset`size$$ = {
+    371.8, {183.150390625, 14.35205078125}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`v$$ = 1, $CellContext`v1$$ = 
+        1, $CellContext`v2$$ = 1, $CellContext`v3$$ = 1, $CellContext`v4$$ = 
+        1, $CellContext`v5$$ = 1, $CellContext`v6$$ = 
+        1, $CellContext`\[Alpha]$$ = 0}, "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Block[{}, Subscript[$CellContext`\[CapitalGamma], D] = {
+           
+           DirichletCondition[$CellContext`u[$CellContext`x, $CellContext`y] == \
+$CellContext`v1$$ Cos[$CellContext`\[Alpha]$$], 
+            $CellContext`Online[{$CellContext`x, $CellContext`y}, 
+             Part[$CellContext`BCs, 1], 
+             Part[$CellContext`BCs, 2]]], 
+           
+           DirichletCondition[$CellContext`u[$CellContext`x, $CellContext`y] == \
+$CellContext`v2$$ Cos[$CellContext`\[Alpha]$$], 
+            $CellContext`Online[{$CellContext`x, $CellContext`y}, 
+             Part[$CellContext`BCs, 3], 
+             Part[$CellContext`BCs, 4]]], 
+           
+           DirichletCondition[$CellContext`u[$CellContext`x, $CellContext`y] == \
+$CellContext`v3$$ Cos[$CellContext`\[Alpha]$$], 
+            $CellContext`Online[{$CellContext`x, $CellContext`y}, 
+             Part[$CellContext`BCs, 5], 
+             Part[$CellContext`BCs, 6]]], 
+           
+           DirichletCondition[$CellContext`u[$CellContext`x, $CellContext`y] == \
+$CellContext`v4$$ Cos[$CellContext`\[Alpha]$$], 
+            $CellContext`Online[{$CellContext`x, $CellContext`y}, 
+             Part[$CellContext`BCs, 7], 
+             Part[$CellContext`BCs, 8]]], 
+           
+           DirichletCondition[$CellContext`u[$CellContext`x, $CellContext`y] == \
+$CellContext`v5$$ Cos[$CellContext`\[Alpha]$$], 
+            $CellContext`Online[{$CellContext`x, $CellContext`y}, 
+             Part[$CellContext`BCs, 9], 
+             Part[$CellContext`BCs, 10]]], 
+           
+           DirichletCondition[$CellContext`u[$CellContext`x, $CellContext`y] == \
+$CellContext`v6$$ Cos[$CellContext`\[Alpha]$$], 
+            $CellContext`Online[{$CellContext`x, $CellContext`y}, 
+             Part[$CellContext`BCs, 11], 
+             Part[$CellContext`BCs, 12]]]}; $CellContext`potential = 
+         NDSolveValue[{Laplacian[
+              $CellContext`u[$CellContext`x, $CellContext`y], \
+{$CellContext`x, $CellContext`y}] == 0, 
+            Subscript[$CellContext`\[CapitalGamma], D]}, $CellContext`u, 
+           Element[{$CellContext`x, $CellContext`y}, $CellContext`mesh]]; 
+        ContourPlot[
+          $CellContext`potential[$CellContext`x, $CellContext`y], 
+          Element[{$CellContext`x, $CellContext`y}, $CellContext`mesh], 
+          ColorFunction -> "BlueGreenYellow", AspectRatio -> Automatic, 
+          PlotRange -> {-$CellContext`vmax, $CellContext`vmax}, Contours -> 
+          20, MaxRecursion -> 5, Epilog -> {
+            PointSize[Medium], Red, 
+            Point[{
+              Sin[$CellContext`\[Alpha]$$ + Pi/2 - 0.1], 
+              Cos[$CellContext`\[Alpha]$$ + Pi/2 - 0.1]}], Dashed, 
+            Circle[{0, 0}, 0.7]}]], 
+      "Specifications" :> {{{$CellContext`v$$, 1, "Voltage"}, 0, 
+         10}, {{$CellContext`\[Alpha]$$, 0, "Angle"}, 0, 2 
+         Pi}, {{$CellContext`v1$$, 1, "Voltage1"}, 0, 
+         10}, {{$CellContext`v2$$, 1, "Voltage2"}, 0, 
+         10}, {{$CellContext`v3$$, 1, "Voltage3"}, 0, 
+         10}, {{$CellContext`v4$$, 1, "Voltage4"}, 0, 
+         10}, {{$CellContext`v5$$, 1, "Voltage5"}, 0, 
+         10}, {{$CellContext`v6$$, 1, "Voltage6"}, 0, 10}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{688., {127., 133.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.88546997125447*^9, 3.885469985821681*^9}, 
+   3.8856267688017263`*^9, 3.8856268903052187`*^9, 3.885626960508423*^9, 
+   3.885627266716206*^9},
+ CellLabel->"Out[30]=",ExpressionUUID->"ee13eb7a-6807-4b56-8dba-28b8f19b5873"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part", "partd", 
+   "\"Part specification \\!\\(\\*RowBox[{\\\"BCs\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}]\\) is \
+longer than depth of object.\"", 2, 1, 1, 25054981867011713272, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.886238132592249*^9},
+ CellLabel->"",ExpressionUUID->"f4d67559-3b2e-4b89-996e-020cfda4391a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part", "partd", 
+   "\"Part specification \\!\\(\\*RowBox[{\\\"BCs\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"2\\\", \\\"\[RightDoubleBracket]\\\"}]\\) is \
+longer than depth of object.\"", 2, 1, 2, 25054981867011713272, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8862381326124487`*^9},
+ CellLabel->"",ExpressionUUID->"83dc7a42-6dcd-4220-92f1-de3e38d98743"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part", "partd", 
+   "\"Part specification \\!\\(\\*RowBox[{\\\"BCs\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"3\\\", \\\"\[RightDoubleBracket]\\\"}]\\) is \
+longer than depth of object.\"", 2, 1, 3, 25054981867011713272, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.886238132622363*^9},
+ CellLabel->"",ExpressionUUID->"ce9bd664-8b05-4e4d-a78a-9902ce3c4334"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Part\\\", \\\"::\\\", \
+\\\"partd\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 1, 4, 25054981867011713272, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.886238132631968*^9},
+ CellLabel->"",ExpressionUUID->"a2f20c70-911f-4dcb-984e-c6ebb6456a55"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue", "femnr", 
+   "\"\\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"x\\\", \\\",\\\", \\\"y\
+\\\"}], \\\"}\\\"}], \\\"\[Element]\\\", \\\"mesh\\\"}]\\) is not a valid \
+region specification.\"", 2, 1, 5, 25054981867011713272, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.886238132700182*^9},
+ CellLabel->"",ExpressionUUID->"c97afded-fb29-43a8-8be0-c39ac0d1171a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ContourPlot", "idomdim", 
+   "\"\\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"x\\\", \\\",\\\", \\\"y\
+\\\"}], \\\"}\\\"}], \\\"\[Element]\\\", \\\"mesh\\\"}]\\) does not have a \
+valid dimension as a plotting domain.\"", 2, 1, 6, 25054981867011713272, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8862381327662354`*^9},
+ CellLabel->"",ExpressionUUID->"fda120fd-db88-4bc2-9ee1-2dfc8c68cebb"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part", "partd", 
+   "\"Part specification \\!\\(\\*RowBox[{\\\"BCs\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}]\\) is \
+longer than depth of object.\"", 2, 1, 7, 25054981867011713272, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.886238132784624*^9},
+ CellLabel->"",ExpressionUUID->"5e94b09d-38b8-4d6d-8fa7-0b6a4e97d80e"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part", "partd", 
+   "\"Part specification \\!\\(\\*RowBox[{\\\"BCs\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"2\\\", \\\"\[RightDoubleBracket]\\\"}]\\) is \
+longer than depth of object.\"", 2, 1, 8, 25054981867011713272, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8862381327926826`*^9},
+ CellLabel->"",ExpressionUUID->"ea6e6dcb-4727-4c17-9416-a9ee8a1efe4e"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part", "partd", 
+   "\"Part specification \\!\\(\\*RowBox[{\\\"BCs\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"3\\\", \\\"\[RightDoubleBracket]\\\"}]\\) is \
+longer than depth of object.\"", 2, 1, 9, 25054981867011713272, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8862381327998333`*^9},
+ CellLabel->"",ExpressionUUID->"1f162f33-2631-47f0-8698-0048ca1f2df7"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Part\\\", \\\"::\\\", \
+\\\"partd\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 1, 10, 25054981867011713272, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.886238132858321*^9},
+ CellLabel->"",ExpressionUUID->"e3fcef87-dddb-4bda-8f2b-056367cf9ad7"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue", "femnr", 
+   "\"\\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"x\\\", \\\",\\\", \\\"y\
+\\\"}], \\\"}\\\"}], \\\"\[Element]\\\", \\\"mesh\\\"}]\\) is not a valid \
+region specification.\"", 2, 1, 11, 25054981867011713272, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.886238132911037*^9},
+ CellLabel->"",ExpressionUUID->"effec824-76a4-4830-a41c-72e2931f380b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ContourPlot", "idomdim", 
+   "\"\\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"x\\\", \\\",\\\", \\\"y\
+\\\"}], \\\"}\\\"}], \\\"\[Element]\\\", \\\"mesh\\\"}]\\) does not have a \
+valid dimension as a plotting domain.\"", 2, 1, 12, 25054981867011713272, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.886238132965207*^9},
+ CellLabel->"",ExpressionUUID->"6915d321-41bf-4787-9788-a1e74ef17688"]
+}, Open  ]]
+},
+WindowSize->{808, 697},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c87f83af-d1c2-4f71-abff-477852730055"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 9025, 224, 745, "Input",ExpressionUUID->"ca2eca36-1d18-4f82-a3d1-8ecf421a7d09"],
+Cell[9608, 248, 5595, 106, 279, "Output",ExpressionUUID->"ee13eb7a-6807-4b56-8dba-28b8f19b5873"],
+Cell[15206, 356, 414, 8, 28, "Message",ExpressionUUID->"f4d67559-3b2e-4b89-996e-020cfda4391a"],
+Cell[15623, 366, 416, 8, 28, "Message",ExpressionUUID->"83dc7a42-6dcd-4220-92f1-de3e38d98743"],
+Cell[16042, 376, 414, 8, 28, "Message",ExpressionUUID->"ce9bd664-8b05-4e4d-a78a-9902ce3c4334"],
+Cell[16459, 386, 414, 8, 28, "Message",ExpressionUUID->"a2f20c70-911f-4dcb-984e-c6ebb6456a55"],
+Cell[16876, 396, 432, 8, 28, "Message",ExpressionUUID->"c97afded-fb29-43a8-8be0-c39ac0d1171a"],
+Cell[17311, 406, 456, 9, 28, "Message",ExpressionUUID->"fda120fd-db88-4bc2-9ee1-2dfc8c68cebb"],
+Cell[17770, 417, 414, 8, 28, "Message",ExpressionUUID->"5e94b09d-38b8-4d6d-8fa7-0b6a4e97d80e"],
+Cell[18187, 427, 416, 8, 28, "Message",ExpressionUUID->"ea6e6dcb-4727-4c17-9416-a9ee8a1efe4e"],
+Cell[18606, 437, 416, 8, 28, "Message",ExpressionUUID->"1f162f33-2631-47f0-8698-0048ca1f2df7"],
+Cell[19025, 447, 415, 8, 28, "Message",ExpressionUUID->"e3fcef87-dddb-4bda-8f2b-056367cf9ad7"],
+Cell[19443, 457, 433, 8, 28, "Message",ExpressionUUID->"effec824-76a4-4830-a41c-72e2931f380b"],
+Cell[19879, 467, 455, 9, 28, "Message",ExpressionUUID->"6915d321-41bf-4787-9788-a1e74ef17688"]
+}, Open  ]]
+}
+]
+*)
+
